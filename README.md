@@ -9,6 +9,7 @@ Template: Vite + React + TypeScript
 </div>
 
 ## Usage
+
 ### Use Template button
 Click the `Use this template` button above the file list, then use the Owner drop-down menu, and select the account you want to own the repository. Creating a repository from a template has the following advantages:
 
@@ -67,6 +68,8 @@ template-vite-react-ts
 └── src
     ├── __tests__
         ├── App.test.tsx
+    ├── assets
+        ├── react.svg
     ├── App.scss
     ├── App.tsx
     ├── index.scss
@@ -88,7 +91,7 @@ template-vite-react-ts
 
 ## Styleguide
 
-For coding styling, we decided to go with ESLint and [ESLint airbnb config](https://github.com/airbnb/javascript#readme).
+For coding styling, I decided to use [eslint](https://eslint.org/) and the [eslint-airbnb configuration](https://github.com/airbnb/javascript#readme), with some personal modifications.
 
 ## Credits
 
