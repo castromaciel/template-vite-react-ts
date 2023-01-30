@@ -56,7 +56,7 @@ In this project, you can run the following scripts:
 
 - [axios](https://github.com/axios/axios) for networking.
 - [sass](https://sass-lang.com/) for stylesheets.
-- [jest](https://facebook.github.io/jest/) and [react-native-testing-library](https://callstack.github.io/react-native-testing-library/) for testing.
+- [jest](https://facebook.github.io/jest/) and [react-testing-library](https://testing-library.com/docs/react-testing-library/intro/) for testing.
 
 ## Folder Structure
 
