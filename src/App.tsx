@@ -34,6 +34,11 @@ function App() {
       </p>
       <div>
         <p>
+          Use this
+          {' '}
+          <a href="https://github.com/castromaciel/template-vite-react-ts" target="_blank" rel="noreferrer">template</a>
+        </p>
+        <p>
           Follow me at
           {' '}
           <a href="https://github.com/castromaciel" target="_blank" rel="noreferrer">github</a>
