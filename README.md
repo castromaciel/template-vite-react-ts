@@ -75,12 +75,15 @@ template-vite-react-ts
     ├── index.scss
     ├── main.tsx
     └── vite-env.d.ts
+├── .env.development
+├── .eslintignore
 ├── .eslintrc.json
 ├── .gitignore
 ├── .babel.config.json
 ├── index.html
 ├── jest.config.ts
 ├── jest.setup.ts
+├── LICENSE
 ├── package.json
 ├── README.md
 ├── tsconfig.json
