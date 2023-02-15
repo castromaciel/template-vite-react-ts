@@ -3,7 +3,8 @@
   "plugins": ["@typescript-eslint"],
   "extends": ["airbnb", "airbnb/hooks"],
   "env": {
-    "browser": true
+    "browser": true,
+    "jest": true
   },
   "rules": {
     "@typescript-eslint/no-unused-vars": ["error"],
