@@ -1,8 +1,11 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
 
 function App() {
   const [count, setCount] = useState(0)
+
+  const handleClick = () => {
+    setCount((count) => count + 1)
+  }
 
   return (
     <div className="App">
@@ -11,12 +14,12 @@ function App() {
           <img src="/vite.svg" className="logo" alt="Vite logo" />
         </a>
         <a href="https://reactjs.org/" target="_blank" rel="noreferrer">
-          <img src={reactLogo} className="logo" alt="React logo" />
+          <img src="/react.svg" className="logo" alt="React logo" />
         </a>
       </div>
       <h1>Template: Vite + React + Ts</h1>
       <div className="card">
-        <button type="button" onClick={() => setCount((count) => count + 1)}>
+        <button type="button" onClick={handleClick}>
           count is 
           {' '}
           {count}
