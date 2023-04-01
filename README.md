@@ -50,7 +50,7 @@ In this project, you can run the following scripts:
 | yarn build    | Builds the app for production to the `dist` folder. |
 | yarn dev      | Runs the app in the development mode.               |
 | yarn preview  | Start a local web server that serves the built solution from ./dist for previewing |
-| yarn test     | Runs tests with jest.                               |
+| yarn test     | Runs tests with vitest.                             |
 
 ## Base Dependencies
 
@@ -62,6 +62,8 @@ In this project, you can run the following scripts:
 
 ```
 template-vite-react-ts
+├── .github
+    ├── workflows
 ├── node_modules
 ├── public
 │   └── vite.svg
