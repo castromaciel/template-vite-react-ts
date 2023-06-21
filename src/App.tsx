@@ -10,8 +10,11 @@ function App() {
   return (
     <div className="App">
       <div>
-        <a href="https://vitejs.dev" target="_blank" rel="noreferrer">
+        <a href="https://vitejs.dev/" target="_blank" rel="noreferrer">
           <img src="/vite.svg" className="logo" alt="Vite logo" />
+        </a>
+        <a href="https://vitest.dev/" target="_blank" rel="noreferrer">
+          <img src="/vitest.svg" className="logo" alt="Vitest logo" />
         </a>
         <a href="https://reactjs.org/" target="_blank" rel="noreferrer">
           <img src="/react.svg" className="logo" alt="React logo" />

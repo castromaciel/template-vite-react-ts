@@ -25,7 +25,8 @@ jobs:
         uses: bahmutov/npm-install@v1
 
       - name: Test
-        run: yarn test
+        run: npm run test
 
       - name: Build
-        run: yarn build
+        run: npm run build
+
