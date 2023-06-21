@@ -32,4 +32,4 @@ coverage
 
 pnpm-lock.yaml
 yarn.lock
-pacj-lock.json
+package-lock.json

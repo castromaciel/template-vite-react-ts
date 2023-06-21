@@ -1,5 +1,5 @@
 <h1 align="center">
-Template: Vite + React + TypeScript
+Template: Vite + Vitest + React + TypeScript
 </h1>
 
 <div align="center">
@@ -21,13 +21,13 @@ Creating a repository from a template starts a new project quickly.
 ## Development
 
 To get a local copy, clone it using:
-```
+```sh
 git clone https://github.com/castromaciel/template-vite-react-ts.git
 ```
 
 ### Make it your own
 
-```
+```sh
 rm -rf .git && git init
 git add .
 git commit -m "Initial commit"
@@ -35,10 +35,18 @@ git commit -m "Initial commit"
 
 ### Install dependencies:
 
+To install dependencies use one of the following commands:
+
+```sh
+npm install
 ```
+
+```sh
 yarn install
-or
-npm install 
+```
+
+```sh
+pnpm install
 ```
 
 ### Available Scripts
@@ -47,16 +55,16 @@ In this project, you can run the following scripts:
 
 | Script        | Description                                         |
 | ------------- | --------------------------------------------------- |
-| yarn build    | Builds the app for production to the `dist` folder. |
-| yarn dev      | Runs the app in the development mode.               |
-| yarn preview  | Start a local web server that serves the built solution from ./dist for previewing |
-| yarn test     | Runs tests with vitest.                             |
+| npm run build    | Builds the app for production to the `dist` folder. |
+| npm run dev      | Runs the app in the development mode.               |
+| npm run preview  | Start a local web server that serves the built solution from ./dist for previewing |
+| npm run test     | Runs tests with vitest.                             |
 
 ## Base Dependencies
 
 - [axios](https://github.com/axios/axios) for networking.
 - [sass](https://sass-lang.com/) for stylesheets.
-- [jest](https://facebook.github.io/jest/) and [react-testing-library](https://testing-library.com/docs/react-testing-library/intro/) for testing.
+- [vitest](https://vitest.dev/) for testing.
 
 ## Folder Structure
 
@@ -80,18 +88,16 @@ template-vite-react-ts
 ├── .env.development
 ├── .eslintignore
 ├── .eslintrc.json
+├── .gitattributes
 ├── .gitignore
-├── .babel.config.json
 ├── index.html
-├── jest.config.ts
-├── jest.setup.ts
 ├── LICENSE
 ├── package.json
 ├── README.md
 ├── tsconfig.json
 ├── tsconfig.node.json
 ├── vite.config.js
-├── yarn.lock
+├── vitest.config.js
 ```
 
 ## Styleguide
