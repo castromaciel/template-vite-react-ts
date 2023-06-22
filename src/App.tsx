@@ -1,4 +1,6 @@
 import { useState } from 'react'
+import { ImageLink } from './components'
+import { HOME_LINKS } from './constants'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -10,15 +12,9 @@ function App() {
   return (
     <div className="App">
       <div>
-        <a href="https://vitejs.dev/" target="_blank" rel="noreferrer">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://vitest.dev/" target="_blank" rel="noreferrer">
-          <img src="/vitest.svg" className="logo" alt="Vitest logo" />
-        </a>
-        <a href="https://reactjs.org/" target="_blank" rel="noreferrer">
-          <img src="/react.svg" className="logo" alt="React logo" />
-        </a>
+        {
+          HOME_LINKS.map((imageLink) => <ImageLink key={imageLink.alt} {...imageLink} />)
+        }
       </div>
       <h1>Template: Vite + React + Ts</h1>
       <div className="card">
