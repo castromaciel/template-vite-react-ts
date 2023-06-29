@@ -1,6 +1,6 @@
 {
   "name": "@template/vite-react-ts",
-  "private": true,
+  "private": false,
   "description": "A custom Vite + React + TS template, using vitest for testing",
   "author": "Castro Maciel",
   "keywords": [
