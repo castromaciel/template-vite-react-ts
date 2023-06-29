@@ -1,7 +1,7 @@
 {
   "name": "template-vite-react-ts",
   "private": true,
-  "version": "0.0.3",
+  "version": "0.0.4",
   "type": "module",
   "license": "MIT",
   "repository": { 
@@ -9,9 +9,10 @@
     "url": "https://github.com/castromaciel/template-vite-react-ts.git" 
   } ,
   "scripts": {
-    "build": "tsc && vite build",
+    "build": "npm run lint && tsc && vite build",
     "coverage": "vitest run --coverage",
     "dev": "vite",
+    "lint": "./node_modules/.bin/eslint src/**/*.{ts,tsx}",
     "preview": "vite preview",
     "start": "vite",
     "test": "vitest --run",
