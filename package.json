@@ -1,16 +1,20 @@
 {
   "name": "template-vite-react-ts",
   "private": true,
-  "version": "0.0.2",
+  "version": "0.0.3",
   "type": "module",
+  "license": "MIT",
+  "repository": { 
+    "type": "git", 
+    "url": "https://github.com/castromaciel/template-vite-react-ts.git" 
+  } ,
   "scripts": {
     "build": "tsc && vite build",
+    "coverage": "vitest run --coverage",
     "dev": "vite",
     "preview": "vite preview",
     "start": "vite",
     "test": "vitest --run",
-    "test:coverage": "vitest run --coverage",
-    "test:ui": "vitest --ui",
     "test:watch": "vitest",
     "prepare": "husky install"
   },
