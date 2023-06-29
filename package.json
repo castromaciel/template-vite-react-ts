@@ -1,7 +1,15 @@
 {
-  "name": "template-vite-react-ts",
+  "name": "@template/vite-react-ts",
   "private": true,
-  "version": "0.0.4",
+  "description": "A custom Vite + React + TS template, using vitest for testing",
+  "author": "Castro Maciel",
+  "keywords": [
+    "React",
+    "Typescript",
+    "Vite",
+    "React template"
+  ],
+  "version": "1.0.0",
   "type": "module",
   "license": "MIT",
   "repository": { 
