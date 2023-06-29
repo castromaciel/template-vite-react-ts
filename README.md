@@ -20,12 +20,23 @@ Creating a repository from a template starts a new project quickly.
 
 ## Development
 
+### Prerequisites
+
+* [Node js](https://nodejs.org/en)
+
+### Recommended
+
+* [pnpm](https://pnpm.io/) 
+* [Node js - v16.x.x](https://nodejs.org/en/blog/release/v16.16.0)
+
+### Make it your own
+
 To get a local copy, clone it using:
 ```sh
 git clone https://github.com/castromaciel/template-vite-react-ts.git
 ```
 
-### Make it your own
+Or get it downloading
 
 ```sh
 rm -rf .git && git init
@@ -56,8 +67,10 @@ In this project, you can run the following scripts:
 | Script        | Description                                         |
 | ------------- | --------------------------------------------------- |
 | npm run build    | Builds the app for production to the `dist` folder. |
+| npm run coverage | Runs tests with code coverage                       |
 | npm run dev      | Runs the app in the development mode.               |
 | npm run preview  | Start a local web server that serves the built solution from ./dist for previewing |
+| npm run prepare  | Install husky githooks                              |
 | npm run test     | Runs tests with vitest.                             |
 
 ## Base Dependencies
@@ -72,6 +85,9 @@ In this project, you can run the following scripts:
 template-vite-react-ts
 ├── .github
     ├── workflows
+├── .husky
+    ├── pre-commit
+    ├── pre-push
 ├── node_modules
 ├── public
 │   └── vite.svg
@@ -80,6 +96,9 @@ template-vite-react-ts
         ├── App.test.tsx
     ├── assets
         ├── react.svg
+    ├── components
+    ├── constants
+        ├── index.ts
     ├── App.scss
     ├── App.tsx
     ├── index.scss
@@ -90,15 +109,38 @@ template-vite-react-ts
 ├── .eslintrc.json
 ├── .gitattributes
 ├── .gitignore
+├── .lintstagedrc
+├── .npmrc
 ├── index.html
 ├── LICENSE
 ├── package.json
+├── pnpm-lock.yaml
 ├── README.md
 ├── tsconfig.json
 ├── tsconfig.node.json
 ├── vite.config.js
 ├── vitest.config.js
 ```
+
+## husky config
+
+To create husky githooks, you need to run `npm prepare` or `pnpm prepare`, and then configure your githooks with 
+
+```sh
+npx husky add .husky/<pre-hookname> "command you want to configure"
+```
+
+For example, the initial config has been created with: 
+```sh
+npx husky add .husky/pre-commit "npx lint-staged"
+```
+
+```sh
+npx husky add .husky/pre-push "pnpm test"
+```
+
+You are free to modify the configuration.
+
 
 ## Styleguide
 
