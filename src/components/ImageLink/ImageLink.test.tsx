@@ -12,7 +12,6 @@ describe('Image Link Test', () => {
     render(<ImageLink {...dummyImageLink} />)
 
     const image = screen.getByAltText('Vite logo')
-    screen.debug()
     expect(image).toBeInTheDocument()
   })
 })
